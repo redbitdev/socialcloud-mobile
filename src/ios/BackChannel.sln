@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackChannel", "BackChannel.csproj", "{7AA40BB0-C524-4532-8103-90C9719F665F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		Ad-Hoc|iPhoneSimulator = Ad-Hoc|iPhoneSimulator
+		AppStore|iPhone = AppStore|iPhone
+		AppStore|iPhoneSimulator = AppStore|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AA40BB0-C524-4532-8103-90C9719F665F}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{7AA40BB0-C524-4532-8103-90C9719F665F}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{7AA40BB0-C524-4532-8103-90C9719F665F}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
+		{7AA40BB0-C524-4532-8103-90C9719F665F}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
+		{7AA40BB0-C524-4532-8103-90C9719F665F}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{7AA40BB0-C524-4532-8103-90C9719F665F}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{7AA40BB0-C524-4532-8103-90C9719F665F}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
+		{7AA40BB0-C524-4532-8103-90C9719F665F}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
+		{7AA40BB0-C524-4532-8103-90C9719F665F}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{7AA40BB0-C524-4532-8103-90C9719F665F}.Debug|iPhone.Build.0 = Debug|iPhone
+		{7AA40BB0-C524-4532-8103-90C9719F665F}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{7AA40BB0-C524-4532-8103-90C9719F665F}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{7AA40BB0-C524-4532-8103-90C9719F665F}.Release|iPhone.ActiveCfg = Release|iPhone
+		{7AA40BB0-C524-4532-8103-90C9719F665F}.Release|iPhone.Build.0 = Release|iPhone
+		{7AA40BB0-C524-4532-8103-90C9719F665F}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{7AA40BB0-C524-4532-8103-90C9719F665F}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = BackChannel.csproj
+	EndGlobalSection
+EndGlobal

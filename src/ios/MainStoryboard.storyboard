@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="uU1-2x-wGc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Back Channel View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="BackChannelViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="p6B-FR-C4u"/>
+                    <connections>
+                        <segue destination="Kvj-vZ-7im" kind="modal" identifier="segueEditBlackList" id="yf6-cu-SXI"/>
+                        <segue destination="btx-by-Vbd" kind="modal" identifier="segueRule" id="rAk-DH-cWq"/>
+                        <segue destination="x73-Ut-O3H" kind="modal" identifier="segueViewTweet" id="NNf-Vh-WMO"/>
+                        <segue destination="WKw-U3-GV5" kind="modal" identifier="segueEditSetting" id="qzg-5V-IDy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="393" y="196"/>
+        </scene>
+        <!--Add Alert Rule View Controller - Edit-->
+        <scene sceneID="N06-wI-aLM">
+            <objects>
+                <viewController id="x6Y-w1-eiL" customClass="AddAlertRuleViewController" sceneMemberID="viewController">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Mco-Tw-Ujb">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Rule Name" minimumFontSize="17" clearButtonMode="whileEditing" id="0P9-r2-hoK">
+                                <rect key="frame" x="7" y="6" width="307" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Search Term" minimumFontSize="17" clearButtonMode="whileEditing" id="T22-eH-Uq3">
+                                <rect key="frame" x="7" y="44" width="307" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="phone number" minimumFontSize="17" clearButtonMode="whileEditing" id="UEp-gH-y4h">
+                                <rect key="frame" x="7" y="194" width="307" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="email address" minimumFontSize="17" clearButtonMode="whileEditing" id="EFy-sZ-0iC">
+                                <rect key="frame" x="7" y="271" width="307" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="1" maxValue="50" id="jQZ-v5-W6Y">
+                                <rect key="frame" x="5" y="127" width="311" height="23"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Number of times before sending alert?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gzo-bm-GvQ">
+                                <rect key="frame" x="7" y="84" width="246" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dFz-xr-13r">
+                                <rect key="frame" x="57" y="105" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Send Text/SMS?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dgL-xt-EmC">
+                                <rect key="frame" x="7" y="157" width="307" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="ODf-md-Ta8">
+                                <rect key="frame" x="209" y="164" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Send Email alert?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sOh-sN-sfF">
+                                <rect key="frame" x="7" y="232" width="307" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="kO2-Xn-FMd">
+                                <rect key="frame" x="209" y="239" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Send Dashboard Alert?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o8l-QM-MRT">
+                                <rect key="frame" x="7" y="309" width="307" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="ZUr-dT-xCT">
+                                <rect key="frame" x="209" y="316" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Send mobile app alert?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bFK-3n-ze6">
+                                <rect key="frame" x="7" y="346" width="307" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="V8R-Pu-xaI">
+                                <rect key="frame" x="209" y="353" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </scrollView>
+                    <navigationItem key="navigationItem" title="Edit" id="8mW-NV-QzW">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="qNl-BP-WIN">
+                            <color key="tintColor" red="0.85490196078431369" green="0.031372549019607843" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="Zz0-Hb-CXJ">
+                            <color key="tintColor" red="0.0" green="0.73725490199999999" blue="0.2784313725" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lblCount" destination="dFz-xr-13r" id="D8I-sg-vTh"/>
+                        <outlet property="scrollView" destination="Mco-Tw-Ujb" id="hKK-Jy-qRk"/>
+                        <outlet property="sliderCount" destination="jQZ-v5-W6Y" id="fBB-vA-I6v"/>
+                        <outlet property="switchAppAlert" destination="V8R-Pu-xaI" id="uqy-gI-Upg"/>
+                        <outlet property="switchDashboard" destination="ZUr-dT-xCT" id="Vef-S4-Vng"/>
+                        <outlet property="switchEmail" destination="kO2-Xn-FMd" id="CY1-Rh-FMr"/>
+                        <outlet property="switchSMS" destination="ODf-md-Ta8" id="6CV-bp-R43"/>
+                        <outlet property="txtCellNumber" destination="UEp-gH-y4h" id="kvj-06-61p"/>
+                        <outlet property="txtEmail" destination="EFy-sZ-0iC" id="Q61-ZV-Rgc"/>
+                        <outlet property="txtRuleName" destination="0P9-r2-hoK" id="JYT-dE-W2f"/>
+                        <outlet property="txtSearchTerm" destination="T22-eH-Uq3" id="b3a-WS-Ugq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nbk-1H-DTY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1453" y="691"/>
+        </scene>
+        <!--Add Blacklist Item View Controller - Edit-->
+        <scene sceneID="5wL-DE-rgn">
+            <objects>
+                <viewController id="CZZ-nK-y27" customClass="AddBlacklistItemViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nSf-UH-vmO">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Change the value for the black list item." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mmz-h8-A9h">
+                                <rect key="frame" x="8" y="10" width="305" height="36"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" clearButtonMode="always" id="qja-Am-RXi">
+                                <rect key="frame" x="8" y="54" width="299" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit" id="jO2-NQ-VJV">
+                        <barButtonItem key="backBarButtonItem" title="Cancel" id="9Io-be-weL"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="IEh-A5-Zd6">
+                            <color key="tintColor" red="0.85481440355329952" green="0.031994884866664214" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="MqH-0o-yfJ">
+                            <color key="tintColor" red="0.0" green="0.73725490196078436" blue="0.27843137254901962" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="txtBlacklistItemText" destination="qja-Am-RXi" id="DTz-s8-ZnD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pDR-rH-FQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1456" y="-542"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zST-qZ-lD8">
+            <objects>
+                <navigationController id="uU1-2x-wGc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Zi-MO-EPe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="R5v-Ns-E2v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NsE-F7-LpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92" y="196"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Gn-9l-SpQ">
+            <objects>
+                <navigationController id="Kvj-vZ-7im" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7fE-QE-MS3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CZZ-nK-y27" kind="relationship" relationship="rootViewController" id="tl5-Rk-nBs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ywY-eL-oSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930" y="-542"/>
+        </scene>
+        <!--Setting View Controller - Edit Setting-->
+        <scene sceneID="m4g-k2-X6q">
+            <objects>
+                <viewController id="XPZ-el-pje" customClass="SettingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1jQ-z1-seZ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pyz-Lj-PWd">
+                                <rect key="frame" x="7" y="9" width="293" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" id="dBC-bO-apD">
+                                <rect key="frame" x="7" y="38" width="300" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Edit Setting" id="HgK-Kn-OkY">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="gxx-3C-h2g">
+                            <color key="tintColor" red="0.85490196080000003" green="0.031372549020000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="YEP-it-F4h">
+                            <color key="tintColor" red="0.0" green="0.73725490199999999" blue="0.2784313725" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="btnCancel" destination="gxx-3C-h2g" id="t4u-uD-Ho6"/>
+                        <outlet property="btnSave" destination="YEP-it-F4h" id="ddL-af-w5O"/>
+                        <outlet property="lblKey" destination="Pyz-Lj-PWd" id="HED-hY-PuC"/>
+                        <outlet property="lblValue" destination="dBC-bO-apD" id="YXr-nY-DNv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JeL-8w-POB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1456" y="68"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uw8-2b-9mF">
+            <objects>
+                <navigationController id="btx-by-Vbd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zg1-ml-PiC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="x6Y-w1-eiL" kind="relationship" relationship="rootViewController" id="vaw-yN-0mn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VCR-Js-vV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="691"/>
+        </scene>
+        <!--Tweet View Controller-->
+        <scene sceneID="C6U-tg-ztq">
+            <objects>
+                <viewController id="bQb-Gc-ACy" customClass="TweetViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E49-aB-qVO">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R9T-T2-7lT">
+                                <rect key="frame" x="6" y="54" width="299" height="74"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <string key="text">this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gyu-NQ-yqw">
+                                <rect key="frame" x="64" y="6" width="241" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ymx-ot-6Md">
+                                <rect key="frame" x="59" y="345" width="241" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.25711192259999999" green="0.25711192259999999" blue="0.25711192259999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="tln-Oz-oeE">
+                                <rect key="frame" x="6" y="6" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6R4-OZ-T2I">
+                                <rect key="frame" x="0.0" y="372" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Promote" id="6Wu-be-lYb"/>
+                                    <barButtonItem title="Delete" id="81F-t5-8L2"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xwq-z1-ZNq">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="3p3-IQ-3hU"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnDelete" destination="81F-t5-8L2" id="a7b-B6-xxx"/>
+                        <outlet property="btnDone" destination="3p3-IQ-3hU" id="fXQ-Hr-bcZ"/>
+                        <outlet property="btnPromote" destination="6Wu-be-lYb" id="f8z-Z5-nFq"/>
+                        <outlet property="image" destination="tln-Oz-oeE" id="4fB-LS-aAN"/>
+                        <outlet property="lblDate" destination="ymx-ot-6Md" id="TnY-fj-Dps"/>
+                        <outlet property="lblTweet" destination="R9T-T2-7lT" id="aPZ-1l-KKD"/>
+                        <outlet property="lblUser" destination="gyu-NQ-yqw" id="Fo1-ba-N3L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n2h-Ka-xKR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1471" y="1515"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YNF-6w-xr1">
+            <objects>
+                <navigationController id="x73-Ut-O3H" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fEH-Sk-ZmI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bQb-Gc-ACy" kind="relationship" relationship="rootViewController" id="SKG-XZ-93K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M8j-Z2-Kvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934" y="1515"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fbj-WU-X6v">
+            <objects>
+                <navigationController id="WKw-U3-GV5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aMC-s8-BiB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XPZ-el-pje" kind="relationship" relationship="rootViewController" id="I8t-eg-oBV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9jV-oY-RBn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934" y="68"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="AddAlertRuleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddAlertRuleViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="lblCount" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="sliderCount" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="switchAppAlert" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switchDashboard" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switchEmail" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switchSMS" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="txtCellNumber" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtEmail" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtRuleName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtSearchTerm" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="AddBlacklistItemViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddBlacklistItemViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="txtBlacklistItemText" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="BackChannelViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BackChannelViewController.h"/>
+        </class>
+        <class className="SettingViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="btnCancel" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="btnSave" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="lblKey" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblValue" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="TweetViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TweetViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="btnDelete" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="btnDone" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="btnPromote" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="image" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="lblDate" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblTweet" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblUser" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

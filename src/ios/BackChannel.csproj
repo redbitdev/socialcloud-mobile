@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7AA40BB0-C524-4532-8103-90C9719F665F}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BackChannel</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>BackChannel</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;IOS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <DefineConstants>IOS</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;IOS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchLink>None</MtouchLink>
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+    <CodesignProvision>3E99AF52-CC7D-47D5-BF11-651ED60A13FC</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DefineConstants>IOS</DefineConstants>
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+    <CodesignProvision>9A2A05B4-4D95-459C-BB92-965D62F5A687</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <BuildIpa>true</BuildIpa>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <ConsolePause>false</ConsolePause>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <DefineConstants>IOS</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <DefineConstants>IOS</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAzure.MobileServices.iOS">
+      <HintPath>..\..\libs\ios\Microsoft.WindowsAzure.MobileServices.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\libs\ios\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="AlertView">
+      <HintPath>..\..\libs\ios\ui\AlertView.dll</HintPath>
+    </Reference>
+    <Reference Include="SDWebImage">
+      <HintPath>..\..\libs\ios\ui\SDWebImage.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="UI\TableCells\Tweets\" />
+    <Folder Include="UI\TableCells\Images\" />
+    <Folder Include="UI\TableCells\BlackList\" />
+    <Folder Include="ViewControllerss\" />
+    <Folder Include="images\menu\" />
+    <Folder Include="UI\TableCells\Alerts\" />
+    <Folder Include="UI\TableCells\AlertRules\" />
+    <Folder Include="common\Extensions\" />
+    <Folder Include="UI\TableCells\Settings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\common\LoginManager.cs">
+      <Link>common\LoginManager.cs</Link>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="BackChannelViewController.cs" />
+    <Compile Include="BackChannelViewController.designer.cs">
+      <DependentUpon>BackChannelViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\common\CCAdminApi.cs">
+      <Link>common\CCAdminApi.cs</Link>
+    </Compile>
+    <Compile Include="..\common\EntityResultsArgs.cs">
+      <Link>common\EntityResultsArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\common\ResultArgs.cs">
+      <Link>common\ResultArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\common\Exceptions\ServerErrorException.cs">
+      <Link>common\Exceptions\ServerErrorException.cs</Link>
+    </Compile>
+    <Compile Include="..\common\Exceptions\ServerNotFoundException.cs">
+      <Link>common\Exceptions\ServerNotFoundException.cs</Link>
+    </Compile>
+    <Compile Include="..\common\Model\BaseContent.cs">
+      <Link>common\Model\BaseContent.cs</Link>
+    </Compile>
+    <Compile Include="..\common\Model\Images.cs">
+      <Link>common\Model\Images.cs</Link>
+    </Compile>
+    <Compile Include="..\common\Model\Setting.cs">
+      <Link>common\Model\Setting.cs</Link>
+    </Compile>
+    <Compile Include="..\common\Model\Tweet.cs">
+      <Link>common\Model\Tweet.cs</Link>
+    </Compile>
+    <Compile Include="..\common\Model\enums.cs">
+      <Link>common\Model\enums.cs</Link>
+    </Compile>
+    <Compile Include="UI\login\LoginView.cs" />
+    <Compile Include="Helpers\ExtensionMethods.cs" />
+    <Compile Include="UI\UIMenuBarView.cs" />
+    <Compile Include="UI\TableCells\TableCellFactory.cs" />
+    <Compile Include="UI\TableCells\RowClickedEventArgs.cs" />
+    <Compile Include="UI\TableCells\MainMenu\MainMenuTableViewCell.cs" />
+    <Compile Include="UI\TableCells\MainMenu\MainMenuTableViewCell.designer.cs">
+      <DependentUpon>MainMenuTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TableCells\MainMenu\MenuItem.cs" />
+    <Compile Include="UI\UITweetsView.cs" />
+    <Compile Include="UI\TableCells\Tweets\TweetTableViewCell.cs" />
+    <Compile Include="UI\TableCells\Tweets\TweetTableViewCell.designer.cs">
+      <DependentUpon>TweetTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\common\Model\PushChannel.cs">
+      <Link>common\Model\PushChannel.cs</Link>
+    </Compile>
+    <Compile Include="UI\TableCells\Images\ImageTableViewCell.cs" />
+    <Compile Include="UI\TableCells\Images\ImageTableViewCell.designer.cs">
+      <DependentUpon>ImageTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIImageContentView.cs" />
+    <Compile Include="UI\UIBlackListView.cs" />
+    <Compile Include="UI\TableCells\BlackList\BlackListTableViewCell.cs" />
+    <Compile Include="UI\TableCells\BlackList\BlackListTableViewCell.designer.cs">
+      <DependentUpon>BlackListTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Helper.cs" />
+    <Compile Include="ViewControllerss\AddBlacklistItemViewController.cs" />
+    <Compile Include="ViewControllerss\AddBlacklistItemViewController.designer.cs">
+      <DependentUpon>AddBlacklistItemViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\common\Model\Identities.cs">
+      <Link>common\Model\Identities.cs</Link>
+    </Compile>
+    <Compile Include="UI\UIAlertsView.cs" />
+    <Compile Include="UI\TableCells\Alerts\AlertsTableViewCell.cs" />
+    <Compile Include="UI\TableCells\Alerts\AlertsTableViewCell.designer.cs">
+      <DependentUpon>AlertsTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TableCells\AlertRules\AlertRulesTableViewCell.cs" />
+    <Compile Include="UI\TableCells\AlertRules\AlertRulesTableViewCell.designer.cs">
+      <DependentUpon>AlertRulesTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIAlertsRulesView.cs" />
+    <Compile Include="ViewControllerss\AddAlertRuleViewController.cs" />
+    <Compile Include="ViewControllerss\AddAlertRuleViewController.designer.cs">
+      <DependentUpon>AddAlertRuleViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\common\Extensions\ExtensionMethods.cs">
+      <Link>common\Extensions\ExtensionMethods.cs</Link>
+    </Compile>
+    <Compile Include="ViewControllerss\TweetViewController.cs" />
+    <Compile Include="ViewControllerss\TweetViewController.designer.cs">
+      <DependentUpon>TweetViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TableCells\Settings\SettingsTableViewCell.cs" />
+    <Compile Include="UI\TableCells\Settings\SettingsTableViewCell.designer.cs">
+      <DependentUpon>SettingsTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UISettingView.cs" />
+    <Compile Include="ViewControllerss\SettingViewController.designer.cs">
+      <DependentUpon>SettingViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllerss\SettingViewController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="MainStoryboard.storyboard" />
+    <InterfaceDefinition Include="UI\TableCells\MainMenu\MainMenuTableViewCell.xib" />
+    <InterfaceDefinition Include="UI\TableCells\Tweets\TweetTableViewCell.xib" />
+    <InterfaceDefinition Include="UI\TableCells\Images\ImageTableViewCell.xib" />
+    <InterfaceDefinition Include="UI\TableCells\BlackList\BlackListTableViewCell.xib" />
+    <InterfaceDefinition Include="UI\TableCells\Alerts\AlertsTableViewCell.xib" />
+    <InterfaceDefinition Include="UI\TableCells\AlertRules\AlertRulesTableViewCell.xib" />
+    <InterfaceDefinition Include="UI\TableCells\Settings\SettingsTableViewCell.xib" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="images\login\loginBg.png" />
+    <Content Include="images\login\loginBg%402x.png" />
+    <BundleResource Include="images\icon.png" />
+    <BundleResource Include="images\icon%402x.png" />
+    <BundleResource Include="images\login\btnLogin.png" />
+    <BundleResource Include="images\login\btnLogin%402x.png" />
+    <BundleResource Include="images\login\loginBgWhite.png" />
+    <BundleResource Include="images\login\loginBgWhite%402x.png" />
+    <BundleResource Include="images\login\btnLoginSelected.png" />
+    <BundleResource Include="images\login\btnLoginSelected%402x.png" />
+    <BundleResource Include="images\menu\icons\gears.png" />
+    <BundleResource Include="images\menu\icons\gears%402x.png" />
+    <BundleResource Include="images\menu\icons\alertRules.png" />
+    <BundleResource Include="images\menu\icons\alertRules%402x.png" />
+    <BundleResource Include="images\menu\icons\alerts.png" />
+    <BundleResource Include="images\menu\icons\alerts%402x.png" />
+    <BundleResource Include="images\menu\icons\blacklist.png" />
+    <BundleResource Include="images\menu\icons\blacklist%402x.png" />
+    <BundleResource Include="images\menu\icons\images.png" />
+    <BundleResource Include="images\menu\icons\images%402x.png" />
+    <BundleResource Include="images\menu\icons\tweets.png" />
+    <BundleResource Include="images\menu\icons\tweets%402x.png" />
+    <BundleResource Include="images\titleBar-Background.png" />
+    <BundleResource Include="images\titleBar-Background%402x.png" />
+    <BundleResource Include="images\titlebar-menu-button.png" />
+    <BundleResource Include="images\titlebar-menu-button%402x.png" />
+    <BundleResource Include="images\menu\icons\icons.png" />
+    <BundleResource Include="images\titlebar-menu-button-press.png" />
+    <BundleResource Include="images\titlebar-menu-button-press%402x.png" />
+    <BundleResource Include="images\placeholder.png" />
+    <BundleResource Include="images\placeholder%402x.png" />
+    <BundleResource Include="images\icons\delete.png" />
+    <BundleResource Include="images\icons\delete%402x.png" />
+    <BundleResource Include="images\icons\promote.png" />
+    <BundleResource Include="images\icons\promote%402x.png" />
+    <BundleResource Include="images\icons\add.png" />
+    <BundleResource Include="images\icons\add%402x.png" />
+    <BundleResource Include="images\menu\icons\logout.png" />
+    <BundleResource Include="images\menu\icons\logout%402x.png" />
+    <BundleResource Include="Default-568h%402x.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Icon.png" />
+    <BundleResource Include="Resources\Icon%402x.png" />
+    <BundleResource Include="Resources\Icon-72.png" />
+    <BundleResource Include="Resources\Icon-Small.png" />
+    <BundleResource Include="Resources\Icon-Small%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+    <ITunesArtwork Include="iTunesArtwork" />
+  </ItemGroup>
+</Project>

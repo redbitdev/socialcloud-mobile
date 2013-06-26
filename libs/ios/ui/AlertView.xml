@@ -1,0 +1,306 @@
+<doc>
+    <assembly>
+        <name>AlertView</name>
+    </assembly>
+    <members>
+        <member name="T:AlertView.MBAlertView">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:AlertView.MBAlertView">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:AlertView.MBAlertView(MonoTouch.Foundation.NSCoder)">
+            <param name="coder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:AlertView.MBAlertView(MonoTouch.Foundation.NSObjectFlag)">
+            <param name="t">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:AlertView.MBAlertView(System.IntPtr)">
+            <param name="handle">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:AlertView.MBAlertView.AddButtonWithText(System.String,AlertView.MBAlertViewItemType,AlertView.MBAlertViewButtonHandler)">
+            <param name="text">To be added.</param>
+            <param name="bType">To be added.</param>
+            <param name="handler">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBAlertView.AddsToWindow">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:AlertView.MBAlertView.AddToDisplayQueue">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBAlertView.AlertIsVisible">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:AlertView.MBAlertView.AlertWithBody(System.String,System.String,AlertView.MBAlertViewButtonHandler)">
+            <param name="body">To be added.</param>
+            <param name="buttonTitle">To be added.</param>
+            <param name="handler">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBAlertView.BackgroundAlpha">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBAlertView.BodyFont">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBAlertView.BodyText">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBAlertView.ClassHandle">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBAlertView.DefaultHUDHideDelay">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBAlertView.DidAppearNotification">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBAlertView.DidDismissNotification">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:AlertView.MBAlertView.Dismiss">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:AlertView.MBAlertView.DismissCurrentHUD">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:AlertView.MBAlertView.DismissCurrentHUD(System.Single)">
+            <param name="delay">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:AlertView.MBAlertView.Dispose(System.Boolean)">
+            <param name="disposing">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBAlertView.HalfScreenSize">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBAlertView.IconOffset">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBAlertView.ImageView">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBAlertView.MaxHUDDisplayTime">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:AlertView.MBAlertView.SetDismissalHandler(AlertView.MBAlertViewDismissalHandler)">
+            <param name="handler">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBAlertView.ShouldPerformHandlerAfterDismissal">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBAlertView.Size">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:AlertView.MBAlertView+Notifications">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:AlertView.MBAlertView+Notifications.ObserveDidAppear(System.EventHandler{MonoTouch.Foundation.NSNotificationEventArgs})">
+            <param name="handler">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:AlertView.MBAlertView+Notifications.ObserveDidDismiss(System.EventHandler{MonoTouch.Foundation.NSNotificationEventArgs})">
+            <param name="handler">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:AlertView.MBAlertViewButtonHandler">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:AlertView.MBAlertViewDismissalHandler">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:AlertView.MBAlertViewHUDType">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:AlertView.MBAlertViewHUDType.ActivityIndicator">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:AlertView.MBAlertViewHUDType.Checkmark">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:AlertView.MBAlertViewHUDType.Default">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:AlertView.MBAlertViewHUDType.ExclamationMark">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:AlertView.MBAlertViewHUDType.Image">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:AlertView.MBAlertViewHUDType.ImagePositive">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:AlertView.MBAlertViewHUDType.LabelIcon">
+            <summary>To be added.</summary>
+        </member>
+        <member name="T:AlertView.MBAlertViewItemType">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:AlertView.MBAlertViewItemType.Default">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:AlertView.MBAlertViewItemType.Destructive">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:AlertView.MBAlertViewItemType.Positive">
+            <summary>To be added.</summary>
+        </member>
+        <member name="T:AlertView.MBHUDView">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:AlertView.MBHUDView">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:AlertView.MBHUDView(MonoTouch.Foundation.NSCoder)">
+            <param name="coder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:AlertView.MBHUDView(MonoTouch.Foundation.NSObjectFlag)">
+            <param name="t">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:AlertView.MBHUDView(System.IntPtr)">
+            <param name="handle">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBHUDView.BackgroundColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBHUDView.BodyOffset">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBHUDView.ClassHandle">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:AlertView.MBHUDView.Dispose(System.Boolean)">
+            <param name="disposing">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBHUDView.HudHideDelay">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBHUDView.HudType">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:AlertView.MBHUDView.HudWithBody(System.String,AlertView.MBAlertViewHUDType,System.Single,System.Boolean)">
+            <param name="body">To be added.</param>
+            <param name="aType">To be added.</param>
+            <param name="delay">To be added.</param>
+            <param name="showNow">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:AlertView.MBHUDView.IconLabel">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:ApiDefinition.Messaging">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:ApiDefinition.Messaging">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:ApiDefinition.Messaging.IntPtr_objc_msgSend_IntPtr_int_float_bool(System.IntPtr,System.IntPtr,System.IntPtr,System.Int32,System.Single,System.Boolean)">
+            <param name="receiver">To be added.</param>
+            <param name="selector">To be added.</param>
+            <param name="arg1">To be added.</param>
+            <param name="arg2">To be added.</param>
+            <param name="arg3">To be added.</param>
+            <param name="arg4">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:ApiDefinition.Messaging.IntPtr_objc_msgSendSuper_IntPtr_int_float_bool(System.IntPtr,System.IntPtr,System.IntPtr,System.Int32,System.Single,System.Boolean)">
+            <param name="receiver">To be added.</param>
+            <param name="selector">To be added.</param>
+            <param name="arg1">To be added.</param>
+            <param name="arg2">To be added.</param>
+            <param name="arg3">To be added.</param>
+            <param name="arg4">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+    </members>
+</doc>

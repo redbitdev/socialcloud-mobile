@@ -1,0 +1,1056 @@
+<doc>
+    <assembly>
+        <name>SDWebImage</name>
+    </assembly>
+    <members>
+        <member name="T:ApiDefinition.Messaging">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:ApiDefinition.Messaging">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:ApiDefinition.Messaging.void_objc_msgSend_IntPtr_IntPtr_int_IntPtr_IntPtr(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)">
+            <param name="receiver">To be added.</param>
+            <param name="selector">To be added.</param>
+            <param name="arg1">To be added.</param>
+            <param name="arg2">To be added.</param>
+            <param name="arg3">To be added.</param>
+            <param name="arg4">To be added.</param>
+            <param name="arg5">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:ApiDefinition.Messaging.void_objc_msgSend_IntPtr_UInt32_IntPtr_int(System.IntPtr,System.IntPtr,System.IntPtr,System.UInt32,System.IntPtr,System.Int32)">
+            <param name="receiver">To be added.</param>
+            <param name="selector">To be added.</param>
+            <param name="arg1">To be added.</param>
+            <param name="arg2">To be added.</param>
+            <param name="arg3">To be added.</param>
+            <param name="arg4">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:ApiDefinition.Messaging.void_objc_msgSend_IntPtr_UInt32_IntPtr_int_IntPtr(System.IntPtr,System.IntPtr,System.IntPtr,System.UInt32,System.IntPtr,System.Int32,System.IntPtr)">
+            <param name="receiver">To be added.</param>
+            <param name="selector">To be added.</param>
+            <param name="arg1">To be added.</param>
+            <param name="arg2">To be added.</param>
+            <param name="arg3">To be added.</param>
+            <param name="arg4">To be added.</param>
+            <param name="arg5">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:ApiDefinition.Messaging.void_objc_msgSend_IntPtr_UInt32_IntPtr_IntPtr(System.IntPtr,System.IntPtr,System.IntPtr,System.UInt32,System.IntPtr,System.IntPtr)">
+            <param name="receiver">To be added.</param>
+            <param name="selector">To be added.</param>
+            <param name="arg1">To be added.</param>
+            <param name="arg2">To be added.</param>
+            <param name="arg3">To be added.</param>
+            <param name="arg4">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:ApiDefinition.Messaging.void_objc_msgSendSuper_IntPtr_IntPtr_int_IntPtr_IntPtr(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)">
+            <param name="receiver">To be added.</param>
+            <param name="selector">To be added.</param>
+            <param name="arg1">To be added.</param>
+            <param name="arg2">To be added.</param>
+            <param name="arg3">To be added.</param>
+            <param name="arg4">To be added.</param>
+            <param name="arg5">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:ApiDefinition.Messaging.void_objc_msgSendSuper_IntPtr_UInt32_IntPtr_int(System.IntPtr,System.IntPtr,System.IntPtr,System.UInt32,System.IntPtr,System.Int32)">
+            <param name="receiver">To be added.</param>
+            <param name="selector">To be added.</param>
+            <param name="arg1">To be added.</param>
+            <param name="arg2">To be added.</param>
+            <param name="arg3">To be added.</param>
+            <param name="arg4">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:ApiDefinition.Messaging.void_objc_msgSendSuper_IntPtr_UInt32_IntPtr_int_IntPtr(System.IntPtr,System.IntPtr,System.IntPtr,System.UInt32,System.IntPtr,System.Int32,System.IntPtr)">
+            <param name="receiver">To be added.</param>
+            <param name="selector">To be added.</param>
+            <param name="arg1">To be added.</param>
+            <param name="arg2">To be added.</param>
+            <param name="arg3">To be added.</param>
+            <param name="arg4">To be added.</param>
+            <param name="arg5">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:ApiDefinition.Messaging.void_objc_msgSendSuper_IntPtr_UInt32_IntPtr_IntPtr(System.IntPtr,System.IntPtr,System.IntPtr,System.UInt32,System.IntPtr,System.IntPtr)">
+            <param name="receiver">To be added.</param>
+            <param name="selector">To be added.</param>
+            <param name="arg1">To be added.</param>
+            <param name="arg2">To be added.</param>
+            <param name="arg3">To be added.</param>
+            <param name="arg4">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:SDWebImage.ForceDecodeUIImageExtension">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.ForceDecodeUIImageExtension.DecodedImage(MonoTouch.UIKit.UIImage,MonoTouch.UIKit.UIImage)">
+            <param name="This">To be added.</param>
+            <param name="image">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:SDWebImage.SDImageCache">
+            <summary>
+                <para>
+                    <see cref="T:SDWebImage.SDImageCache" /> maintains a memory cache and an optional disk cache. Disk cache write operations are performed asynchronous so it doesn’t add unnecessary latency to the UI. </para>
+            </summary>
+            <remarks>
+                <para>
+                    <see cref="T:SDWebImage.SDImageCache" /> maintains a memory cache and an optional disk cache. Disk cache write operations are performed asynchronous so it doesn’t add unnecessary latency to the UI. </para>
+            </remarks>
+        </member>
+        <member name="C:SDWebImage.SDImageCache">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDImageCache(MonoTouch.Foundation.NSCoder)">
+            <param name="coder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDImageCache(MonoTouch.Foundation.NSObjectFlag)">
+            <param name="t">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDImageCache(System.IntPtr)">
+            <param name="handle">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDImageCache(System.String)">
+            <param name="aNamespace">The namespace to use for this cache store </param>
+            <summary>
+                <para>Init a new cache store with a specific namespace</para>
+            </summary>
+            <remarks>
+                <para>Init a new cache store with a specific namespace</para>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:SDWebImage.SDImageCache.AddReadOnlyCachePath(System.String)">
+            <param name="path">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:SDWebImage.SDImageCache.ClassHandle">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.SDImageCache.CleanDisk">
+            <summary>
+                <para>Remove all expired cached image from disk </para>
+            </summary>
+            <remarks>
+                <para>Remove all expired cached image from disk </para>
+            </remarks>
+        </member>
+        <member name="M:SDWebImage.SDImageCache.ClearDisk">
+            <summary>
+                <para>Clear all disk cached images </para>
+            </summary>
+            <remarks>
+                <para>Clear all disk cached images </para>
+            </remarks>
+        </member>
+        <member name="M:SDWebImage.SDImageCache.ClearMemory">
+            <summary>
+                <para>Clear all memory cached images </para>
+            </summary>
+            <remarks>
+                <para>Clear all memory cached images </para>
+            </remarks>
+        </member>
+        <member name="M:SDWebImage.SDImageCache.GetDiskCount">
+            <summary>
+                <para>Get the number of images in the disk cache </para>
+            </summary>
+            <returns>To be added.</returns>
+            <remarks>
+                <para>Get the number of images in the disk cache </para>
+            </remarks>
+        </member>
+        <member name="P:SDWebImage.SDImageCache.GetDiskCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.SDImageCache.GetSize">
+            <summary>
+                <para>Get the size used by the disk cache </para>
+            </summary>
+            <returns>To be added.</returns>
+            <remarks>
+                <para>Get the size used by the disk cache </para>
+            </remarks>
+        </member>
+        <member name="P:SDWebImage.SDImageCache.GetSize">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.SDImageCache.ImageFromDiskCache(System.String)">
+            <param name="key">The unique key used to store the wanted image </param>
+            <summary>
+                <para>Query the disk cache synchronousely.</para>
+            </summary>
+            <returns>To be added.</returns>
+            <remarks>
+                <para>Query the disk cache synchronousely.</para>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:SDWebImage.SDImageCache.ImageFromMemoryCache(System.String)">
+            <param name="key">The unique key used to store the wanted image </param>
+            <summary>
+                <para>Query the memory cache.</para>
+            </summary>
+            <returns>To be added.</returns>
+            <remarks>
+                <para>Query the memory cache.</para>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:SDWebImage.SDImageCache.MaxCacheAge">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:SDWebImage.SDImageCache.MaxCacheSize">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.SDImageCache.QueryDiskCache(System.String,SDWebImage.SDImageCacheDoneHandler)">
+            <param name="key">The unique key used to store the wanted image </param>
+            <param name="doneHandler">To be added.</param>
+            <summary>
+                <para>Query the disk cache asynchronousely.</para>
+            </summary>
+            <remarks>
+                <para>Query the disk cache asynchronousely.</para>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:SDWebImage.SDImageCache.RemoveImage(System.String)">
+            <param name="key">The unique image cache key </param>
+            <summary>
+                <para>Remove the image from memory and disk cache synchronousely</para>
+            </summary>
+            <remarks>
+                <para>Remove the image from memory and disk cache synchronousely</para>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:SDWebImage.SDImageCache.RemoveImage(System.String,System.Boolean)">
+            <param name="key">The unique image cache key </param>
+            <param name="fromDisk">Also remove cache entry from disk if true </param>
+            <summary>
+                <para>Remove the image from memory and optionaly disk cache synchronousely</para>
+            </summary>
+            <remarks>
+                <para>Remove the image from memory and optionaly disk cache synchronousely</para>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:SDWebImage.SDImageCache.SharedImageCache">
+            <summary>
+                <para>Returns global shared cache instance</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>Returns global shared cache instance</para>
+                <para>
+                    <para>
+                        <see cref="T:SDWebImage.SDImageCache" /> global instance </para>
+                </para>
+            </remarks>
+        </member>
+        <member name="M:SDWebImage.SDImageCache.StoreImage(MonoTouch.UIKit.UIImage,System.String)">
+            <param name="image">The image to store </param>
+            <param name="key">The unique image cache key, usually it's image absolute URL </param>
+            <summary>
+                <para>Store an image into memory and disk cache at the given key.</para>
+            </summary>
+            <remarks>
+                <para>Store an image into memory and disk cache at the given key.</para>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:SDWebImage.SDImageCache.StoreImage(MonoTouch.UIKit.UIImage,System.String,System.Boolean)">
+            <param name="image">The image to store </param>
+            <param name="key">The unique image cache key, usually it's image absolute URL </param>
+            <param name="toDisk">Store the image to disk cache if true </param>
+            <summary>
+                <para>Store an image into memory and optionally disk cache at the given key.</para>
+            </summary>
+            <remarks>
+                <para>Store an image into memory and optionally disk cache at the given key.</para>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:SDWebImage.SDImageCache.StoreImage(MonoTouch.UIKit.UIImage,MonoTouch.Foundation.NSData,System.String,System.Boolean)">
+            <param name="image">The image to store </param>
+            <param name="imageData">The image data as returned by the server, this representation will be used for disk storage instead of converting the given image object into a storable/compressed image format in order to save quality and CPU </param>
+            <param name="key">The unique image cache key, usually it's image absolute URL </param>
+            <param name="toDisk">Store the image to disk cache if true </param>
+            <summary>
+                <para>Store an image into memory and optionally disk cache at the given key.</para>
+            </summary>
+            <remarks>
+                <para>Store an image into memory and optionally disk cache at the given key.</para>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:SDWebImage.SDImageCacheDoneHandler">
+            <param name="image">To be added.</param>
+            <param name="cacheType">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:SDWebImage.SDImageCacheType">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:SDWebImage.SDImageCacheType.Disk">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:SDWebImage.SDImageCacheType.Memory">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:SDWebImage.SDImageCacheType.None">
+            <summary>To be added.</summary>
+        </member>
+        <member name="T:SDWebImage.SDWebImageCompletedHandler">
+            <param name="image">To be added.</param>
+            <param name="error">To be added.</param>
+            <param name="cacheType">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:SDWebImage.SDWebImageCompletedWithFinishedHandler">
+            <param name="image">To be added.</param>
+            <param name="error">To be added.</param>
+            <param name="cacheType">To be added.</param>
+            <param name="finished">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:SDWebImage.SDWebImageDownloader">
+            <summary>
+                <para>Asynchronous downloader dedicated and optimized for image loading. </para>
+            </summary>
+            <remarks>
+                <para>Asynchronous downloader dedicated and optimized for image loading. </para>
+            </remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageDownloader">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageDownloader(MonoTouch.Foundation.NSCoder)">
+            <param name="coder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageDownloader(MonoTouch.Foundation.NSObjectFlag)">
+            <param name="t">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageDownloader(System.IntPtr)">
+            <param name="handle">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImageDownloader.ClassHandle">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.SDWebImageDownloader.DownloadImageWithURL(MonoTouch.Foundation.NSUrl,SDWebImage.SDWebImageDownloaderOptions,SDWebImage.SDWebImageDownloaderProgressHandler,SDWebImage.SDWebImageDownloaderCompleteHandler)">
+            <param name="url">The URL to the image to download </param>
+            <param name="options">The options to be used for this download </param>
+            <param name="progressHandler">A block called repeatedly while the image is downloading </param>
+            <param name="completedHandler">A block called once the download is completed. If the download succeeded, the image parameter is set, in case of error, error parameter is set with the error. The last parameter is always YES if SDWebImageDownloaderProgressiveDownload isn't use. With the SDWebImageDownloaderProgressiveDownload option, this block is called repeatedly with the partial image object and the finished argument set to NO before to be called a last time with the full image and finished argument set to YES. In case of error, the finished argument is always YES.</param>
+            <summary>
+                <para>Creates a <see cref="T:SDWebImage.SDWebImageDownloader" /> async downloader instance with a given URL</para>
+            </summary>
+            <returns>To be added.</returns>
+            <remarks>
+                <para>Creates a <see cref="T:SDWebImage.SDWebImageDownloader" /> async downloader instance with a given URL</para>
+                <para>The delegate will be informed when the image is finish downloaded or an error has happen.</para>
+                <para>
+                    <para>SDWebImageDownloaderDelegate</para>
+                    <para>A cancellable <see cref="T:SDWebImage.SDWebImageOperation" /></para>
+                </para>
+            </remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImageDownloader.DownloadStartNotification">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImageDownloader.DownloadStopNotification">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImageDownloader.ExecutionOrder">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImageDownloader.MaxConcurrentDownloads">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.SDWebImageDownloader.SetValueforHTTPHeaderField(System.String,System.String)">
+            <param name="value">The value for the header field. Use nil value to remove the header. </param>
+            <param name="field">The name of the header field to set. </param>
+            <summary>
+                <para>Set a value for a HTTP header to be appended to each download HTTP request.</para>
+            </summary>
+            <remarks>
+                <para>Set a value for a HTTP header to be appended to each download HTTP request.</para>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImageDownloader.SharedDownloader">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks />
+        </member>
+        <member name="M:SDWebImage.SDWebImageDownloader.ValueForHTTPHeaderField(System.String)">
+            <param name="field">To be added.</param>
+            <summary>
+                <para>Returns the value of the specified HTTP header field.</para>
+            </summary>
+            <returns>To be added.</returns>
+            <remarks>
+                <para>Returns the value of the specified HTTP header field.</para>
+                <para>
+                    <para>The value associated with the header field field, or <computeroutput>nil</computeroutput> if there is no corresponding header field. </para>
+                </para>
+            </remarks>
+        </member>
+        <member name="T:SDWebImage.SDWebImageDownloader+Notifications">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.SDWebImageDownloader+Notifications.ObserveDownloadStart(System.EventHandler{MonoTouch.Foundation.NSNotificationEventArgs})">
+            <param name="handler">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.SDWebImageDownloader+Notifications.ObserveDownloadStop(System.EventHandler{MonoTouch.Foundation.NSNotificationEventArgs})">
+            <param name="handler">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:SDWebImage.SDWebImageDownloaderCompleteHandler">
+            <param name="image">To be added.</param>
+            <param name="data">To be added.</param>
+            <param name="error">To be added.</param>
+            <param name="finished">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:SDWebImage.SDWebImageDownloaderExecutionOrder">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:SDWebImage.SDWebImageDownloaderExecutionOrder.FIFO">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:SDWebImage.SDWebImageDownloaderExecutionOrder.LIFO">
+            <summary>To be added.</summary>
+        </member>
+        <member name="T:SDWebImage.SDWebImageDownloaderOperation">
+            <summary>To be added.</summary>
+            <remarks />
+        </member>
+        <member name="C:SDWebImage.SDWebImageDownloaderOperation">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageDownloaderOperation(MonoTouch.Foundation.NSCoder)">
+            <param name="coder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageDownloaderOperation(MonoTouch.Foundation.NSObjectFlag)">
+            <param name="t">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageDownloaderOperation(System.IntPtr)">
+            <param name="handle">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageDownloaderOperation(MonoTouch.Foundation.NSUrlRequest,SDWebImage.SDWebImageDownloaderOptions,SDWebImage.SDWebImageDownloaderProgressHandler,SDWebImage.SDWebImageDownloaderCompleteHandler,SDWebImage.SDWebImageDownloaderOperationCancelHandler)">
+            <param name="request">To be added.</param>
+            <param name="options">To be added.</param>
+            <param name="progressHandler">To be added.</param>
+            <param name="completedHandler">To be added.</param>
+            <param name="CancelHandler">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImageDownloaderOperation.ClassHandle">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.SDWebImageDownloaderOperation.Dispose(System.Boolean)">
+            <param name="disposing">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImageDownloaderOperation.Options">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImageDownloaderOperation.request">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks />
+        </member>
+        <member name="T:SDWebImage.SDWebImageDownloaderOperationCancelHandler">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:SDWebImage.SDWebImageDownloaderOptions">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:SDWebImage.SDWebImageDownloaderOptions.IgnoreCachedResponse">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:SDWebImage.SDWebImageDownloaderOptions.LowPriority">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:SDWebImage.SDWebImageDownloaderOptions.ProgressiveDownload">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:SDWebImage.SDWebImageDownloaderOptions.UseNSUrlCache">
+            <summary>To be added.</summary>
+        </member>
+        <member name="T:SDWebImage.SDWebImageDownloaderProgressHandler">
+            <param name="receivedSize">To be added.</param>
+            <param name="expectedSize">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:SDWebImage.SDWebImageManager">
+            <summary>
+                <para>The <see cref="T:SDWebImage.SDWebImageManager" /> is the class behind the UIImageView+WebCache category and likes. It ties the asynchronous downloader (<see cref="T:SDWebImage.SDWebImageDownloader" />) with the image cache store (<see cref="T:SDWebImage.SDImageCache" />). You can use this class directly to benefit from web image downloading with caching in another context than a UIView.</para>
+            </summary>
+            <remarks>
+                <para>The <see cref="T:SDWebImage.SDWebImageManager" /> is the class behind the UIImageView+WebCache category and likes. It ties the asynchronous downloader (<see cref="T:SDWebImage.SDWebImageDownloader" />) with the image cache store (<see cref="T:SDWebImage.SDImageCache" />). You can use this class directly to benefit from web image downloading with caching in another context than a UIView.</para>
+                <para>Here is a simple example of how to use <see cref="T:SDWebImage.SDWebImageManager" />:</para>
+                <para>
+                    <see cref="T:SDWebImage.SDWebImageManager" /> *manager = [<see cref="T:SDWebImage.SDWebImageManager" /> sharedManager]; [manager downloadWithURL:imageURL delegate:self options:0 progress:nil completed:^(UIImage *image, NSError *error, BOOL fromCache) { if (image) { // do something with image } }]; </para>
+            </remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageManager">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageManager(MonoTouch.Foundation.NSCoder)">
+            <param name="coder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageManager(MonoTouch.Foundation.NSObjectFlag)">
+            <param name="t">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageManager(System.IntPtr)">
+            <param name="handle">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.SDWebImageManager.CancelAll">
+            <summary>
+                <para>Cancel all current opreations </para>
+            </summary>
+            <remarks>
+                <para>Cancel all current opreations </para>
+            </remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImageManager.ClassHandle">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImageManager.Delegate">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.SDWebImageManager.Dispose(System.Boolean)">
+            <param name="disposing">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.SDWebImageManager.DownloadWithURL(MonoTouch.Foundation.NSUrl,SDWebImage.SDWebImageOptions,SDWebImage.SDWebImageDownloaderProgressHandler,SDWebImage.SDWebImageCompletedWithFinishedHandler)">
+            <param name="url">The URL to the image </param>
+            <param name="options">The delegate object used to send result back </param>
+            <param name="progressHandler">A mask to specify options to use for this request </param>
+            <param name="completedHandler">A block called while image is downloading </param>
+            <summary>
+                <para>Downloads the image at the given URL if not present in cache or return the cached version otherwise.</para>
+            </summary>
+            <returns>To be added.</returns>
+            <remarks>
+                <para>Downloads the image at the given URL if not present in cache or return the cached version otherwise.</para>
+                <para>
+                    <para>Returns a cancellable NSOperation </para>
+                </para>
+            </remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImageManager.ImageCache">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks />
+        </member>
+        <member name="P:SDWebImage.SDWebImageManager.ImageDownloader">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks />
+        </member>
+        <member name="P:SDWebImage.SDWebImageManager.IsRunning">
+            <summary>
+                <para>Check one or more operations running </para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>Check one or more operations running </para>
+            </remarks>
+        </member>
+        <member name="M:SDWebImage.SDWebImageManager.SetCacheKeyFilter(SDWebImage.SDWebImageManagerCacheKeyFilterHandler)">
+            <param name="handler">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImageManager.SharedManager">
+            <summary>
+                <para>Returns global <see cref="T:SDWebImage.SDWebImageManager" /> instance.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>Returns global <see cref="T:SDWebImage.SDWebImageManager" /> instance.</para>
+                <para>
+                    <para>
+                        <see cref="T:SDWebImage.SDWebImageManager" /> shared instance </para>
+                </para>
+            </remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImageManager.ShouldDownloadImageForURL">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImageManager.TransformDownloadedImage">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImageManager.WeakDelegate">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:SDWebImage.SDWebImageManagerCacheKeyFilterHandler">
+            <param name="url">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:SDWebImage.SDWebImageManagerDelegate">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageManagerDelegate">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageManagerDelegate(MonoTouch.Foundation.NSCoder)">
+            <param name="coder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageManagerDelegate(MonoTouch.Foundation.NSObjectFlag)">
+            <param name="t">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageManagerDelegate(System.IntPtr)">
+            <param name="handle">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.SDWebImageManagerDelegate.ShouldDownloadImageForURL(SDWebImage.SDWebImageManager,MonoTouch.Foundation.NSUrl)">
+            <param name="imageManager">To be added.</param>
+            <param name="imageUrl">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.SDWebImageManagerDelegate.TransformDownloadedImage(SDWebImage.SDWebImageManager,MonoTouch.UIKit.UIImage,MonoTouch.Foundation.NSUrl)">
+            <param name="imageManager">To be added.</param>
+            <param name="image">To be added.</param>
+            <param name="imageUrl">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:SDWebImage.SDWebImageManagerDelegateCondition">
+            <param name="imageManager">To be added.</param>
+            <param name="imageUrl">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:SDWebImage.SDWebImageManagerDelegateImage">
+            <param name="imageManager">To be added.</param>
+            <param name="image">To be added.</param>
+            <param name="imageUrl">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:SDWebImage.SDWebImageOperation">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageOperation">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageOperation(MonoTouch.Foundation.NSCoder)">
+            <param name="coder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageOperation(MonoTouch.Foundation.NSObjectFlag)">
+            <param name="t">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImageOperation(System.IntPtr)">
+            <param name="handle">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.SDWebImageOperation.Cancel">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:SDWebImage.SDWebImageOptions">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:SDWebImage.SDWebImageOptions.CacheMemoryOnly">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:SDWebImage.SDWebImageOptions.LowPriority">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:SDWebImage.SDWebImageOptions.ProgressiveDownload">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:SDWebImage.SDWebImageOptions.RefreshCached">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:SDWebImage.SDWebImageOptions.RetryFailed">
+            <summary>To be added.</summary>
+        </member>
+        <member name="T:SDWebImage.SDWebImagePrefetcher">
+            <summary>
+                <para>Prefetch some URLs in the cache for future use. Images are downloaded in low priority. </para>
+            </summary>
+            <remarks>
+                <para>Prefetch some URLs in the cache for future use. Images are downloaded in low priority. </para>
+            </remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImagePrefetcher">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImagePrefetcher(MonoTouch.Foundation.NSCoder)">
+            <param name="coder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImagePrefetcher(MonoTouch.Foundation.NSObjectFlag)">
+            <param name="t">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:SDWebImage.SDWebImagePrefetcher(System.IntPtr)">
+            <param name="handle">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.SDWebImagePrefetcher.CancelPrefetching">
+            <summary>
+                <para>Remove and cancel queued list </para>
+            </summary>
+            <remarks>
+                <para>Remove and cancel queued list </para>
+            </remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImagePrefetcher.ClassHandle">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImagePrefetcher.MaxConcurrentDownloads">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImagePrefetcher.Options">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.SDWebImagePrefetcher.prefetchURLs(MonoTouch.Foundation.NSUrl[])">
+            <param name="urls">list of URLs to prefetch </param>
+            <summary>
+                <para>Assign list of URLs to let <see cref="T:SDWebImage.SDWebImagePrefetcher" /> to queue the prefetching, currently one image is downloaded at a time, and skips images for failed downloads and proceed to the next image in the list</para>
+            </summary>
+            <remarks>
+                <para>Assign list of URLs to let <see cref="T:SDWebImage.SDWebImagePrefetcher" /> to queue the prefetching, currently one image is downloaded at a time, and skips images for failed downloads and proceed to the next image in the list</para>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:SDWebImage.SDWebImagePrefetcher.prefetchURLs(MonoTouch.Foundation.NSUrl[],SDWebImage.SDWebImagePrefetcherCompletedHandler)">
+            <param name="urls">list of URLs to prefetch </param>
+            <param name="completionHandler">block to be called when prefetching is completed </param>
+            <summary>
+                <para>Assign list of URLs to let <see cref="T:SDWebImage.SDWebImagePrefetcher" /> to queue the prefetching, currently one image is downloaded at a time, and skips images for failed downloads and proceed to the next image in the list</para>
+            </summary>
+            <remarks>
+                <para>Assign list of URLs to let <see cref="T:SDWebImage.SDWebImagePrefetcher" /> to queue the prefetching, currently one image is downloaded at a time, and skips images for failed downloads and proceed to the next image in the list</para>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:SDWebImage.SDWebImagePrefetcher.SharedImagePrefetcher">
+            <summary>
+                <para>Return the global image prefetcher instance. </para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>Return the global image prefetcher instance. </para>
+            </remarks>
+        </member>
+        <member name="T:SDWebImage.SDWebImagePrefetcherCompletedHandler">
+            <param name="finishedCount">To be added.</param>
+            <param name="skippedCount">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:SDWebImage.WebCacheUIButtonExtension">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIButtonExtension.CancelCurrentImageLoad(MonoTouch.UIKit.UIButton)">
+            <param name="This">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIButtonExtension.SetBackgroundImage(MonoTouch.UIKit.UIButton,MonoTouch.Foundation.NSUrl,MonoTouch.UIKit.UIControlState)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="state">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIButtonExtension.SetBackgroundImage(MonoTouch.UIKit.UIButton,MonoTouch.Foundation.NSUrl,MonoTouch.UIKit.UIControlState,MonoTouch.UIKit.UIImage)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="state">To be added.</param>
+            <param name="placeholder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIButtonExtension.SetBackgroundImage(MonoTouch.UIKit.UIButton,MonoTouch.Foundation.NSUrl,MonoTouch.UIKit.UIControlState,SDWebImage.SDWebImageCompletedHandler)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="state">To be added.</param>
+            <param name="completedHandler">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIButtonExtension.SetBackgroundImage(MonoTouch.UIKit.UIButton,MonoTouch.Foundation.NSUrl,MonoTouch.UIKit.UIControlState,MonoTouch.UIKit.UIImage,SDWebImage.SDWebImageCompletedHandler)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="state">To be added.</param>
+            <param name="placeholder">To be added.</param>
+            <param name="completedHandler">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIButtonExtension.SetBackgroundImage(MonoTouch.UIKit.UIButton,MonoTouch.Foundation.NSUrl,MonoTouch.UIKit.UIControlState,MonoTouch.UIKit.UIImage,SDWebImage.SDWebImageOptions)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="state">To be added.</param>
+            <param name="placeholder">To be added.</param>
+            <param name="options">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIButtonExtension.SetBackgroundImage(MonoTouch.UIKit.UIButton,MonoTouch.Foundation.NSUrl,MonoTouch.UIKit.UIControlState,MonoTouch.UIKit.UIImage,SDWebImage.SDWebImageOptions,SDWebImage.SDWebImageCompletedHandler)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="state">To be added.</param>
+            <param name="placeholder">To be added.</param>
+            <param name="options">To be added.</param>
+            <param name="completedHandler">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIButtonExtension.SetImage(MonoTouch.UIKit.UIButton,MonoTouch.Foundation.NSUrl,MonoTouch.UIKit.UIControlState)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="state">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIButtonExtension.SetImage(MonoTouch.UIKit.UIButton,MonoTouch.Foundation.NSUrl,MonoTouch.UIKit.UIControlState,MonoTouch.UIKit.UIImage)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="state">To be added.</param>
+            <param name="placeholder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIButtonExtension.SetImage(MonoTouch.UIKit.UIButton,MonoTouch.Foundation.NSUrl,MonoTouch.UIKit.UIControlState,SDWebImage.SDWebImageCompletedHandler)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="state">To be added.</param>
+            <param name="completedHandler">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIButtonExtension.SetImage(MonoTouch.UIKit.UIButton,MonoTouch.Foundation.NSUrl,MonoTouch.UIKit.UIControlState,MonoTouch.UIKit.UIImage,SDWebImage.SDWebImageCompletedHandler)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="state">To be added.</param>
+            <param name="placeholder">To be added.</param>
+            <param name="completedHandler">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIButtonExtension.SetImage(MonoTouch.UIKit.UIButton,MonoTouch.Foundation.NSUrl,MonoTouch.UIKit.UIControlState,MonoTouch.UIKit.UIImage,SDWebImage.SDWebImageOptions)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="state">To be added.</param>
+            <param name="placeholder">To be added.</param>
+            <param name="options">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIButtonExtension.SetImage(MonoTouch.UIKit.UIButton,MonoTouch.Foundation.NSUrl,MonoTouch.UIKit.UIControlState,MonoTouch.UIKit.UIImage,SDWebImage.SDWebImageOptions,SDWebImage.SDWebImageCompletedHandler)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="state">To be added.</param>
+            <param name="placeholder">To be added.</param>
+            <param name="options">To be added.</param>
+            <param name="completedHandler">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:SDWebImage.WebCacheUIImageViewExtension">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIImageViewExtension.CancelCurrentImageLoad(MonoTouch.UIKit.UIImageView)">
+            <param name="This">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIImageViewExtension.SetImage(MonoTouch.UIKit.UIImageView,MonoTouch.Foundation.NSUrl)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIImageViewExtension.SetImage(MonoTouch.UIKit.UIImageView,MonoTouch.Foundation.NSUrl,MonoTouch.UIKit.UIImage)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="placeholder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIImageViewExtension.SetImage(MonoTouch.UIKit.UIImageView,MonoTouch.Foundation.NSUrl,SDWebImage.SDWebImageCompletedHandler)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="completedHandler">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIImageViewExtension.SetImage(MonoTouch.UIKit.UIImageView,MonoTouch.Foundation.NSUrl,MonoTouch.UIKit.UIImage,SDWebImage.SDWebImageCompletedHandler)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="placeholder">To be added.</param>
+            <param name="completedHandler">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIImageViewExtension.SetImage(MonoTouch.UIKit.UIImageView,MonoTouch.Foundation.NSUrl,MonoTouch.UIKit.UIImage,SDWebImage.SDWebImageOptions)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="placeholder">To be added.</param>
+            <param name="options">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIImageViewExtension.SetImage(MonoTouch.UIKit.UIImageView,MonoTouch.Foundation.NSUrl,MonoTouch.UIKit.UIImage,SDWebImage.SDWebImageOptions,SDWebImage.SDWebImageCompletedHandler)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="placeholder">To be added.</param>
+            <param name="options">To be added.</param>
+            <param name="completedHandler">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:SDWebImage.WebCacheUIImageViewExtension.SetImage(MonoTouch.UIKit.UIImageView,MonoTouch.Foundation.NSUrl,MonoTouch.UIKit.UIImage,SDWebImage.SDWebImageOptions,SDWebImage.SDWebImageDownloaderProgressHandler,SDWebImage.SDWebImageCompletedHandler)">
+            <param name="This">To be added.</param>
+            <param name="url">To be added.</param>
+            <param name="placeholder">To be added.</param>
+            <param name="options">To be added.</param>
+            <param name="progress">To be added.</param>
+            <param name="completedHandler">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+    </members>
+</doc>
