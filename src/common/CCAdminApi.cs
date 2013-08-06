@@ -25,7 +25,7 @@ namespace RedBit.CCAdmin
             }
         }
 
-        private const string DESTINATION_URL = "http://YOUR-AZURE-WEBSITE.azurewebsites.net/api/";
+		private const string DESTINATION_URL = "http://YOUR-AZURE-WEBSITE.azurewebsites.net/api/";
         private const string TWEETS_URL = "tweets?pageSize={0}&page={1}";
         private const string IMAGES_URL = "images?pageSize={0}&page={1}";
         private const string SETTING_URL = "settings";

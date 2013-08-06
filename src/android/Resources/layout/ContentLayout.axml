@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/contentContainerFrameLayout">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="88px"
+        android:id="@+id/mainHeaderLinearLayout"
+        android:background="@drawable/MainHeaderBackground"
+        android:fitsSystemWindows="true">
+        <ImageButton
+            android:src="@drawable/HeaderDashboardIcon"
+            android:layout_height="88px"
+            android:id="@+id/mainDashboardImageButton"
+            android:layout_width="136px"
+            android:background="#00ffffff"
+            android:scaleType="center" />
+        <TextView
+            android:text="Tweets"
+            android:layout_width="448px"
+            android:layout_height="88px"
+            android:id="@+id/headerTitleTextView"
+            android:textSize="44px"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:shadowColor="#ff2e517d"
+            android:shadowDy="-2"
+            android:shadowRadius="3"
+            android:shadowDx="0" />
+    </LinearLayout>
+    <ScrollView
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff">
+        <TableLayout
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/contentTableLayout" />
+    </ScrollView>
+</LinearLayout>

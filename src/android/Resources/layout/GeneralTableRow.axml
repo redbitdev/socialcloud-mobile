@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+    <LinearLayout
+        android:layout_column="0"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16px"
+        android:layout_marginTop="16px"
+        android:layout_marginBottom="16px"
+        android:layout_marginRight="16px">
+        <TextView
+            android:text="Setting Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rowSettingTextView"
+            android:textSize="24px"
+            android:textColor="#ff202020"
+            android:layout_marginBottom="8px" />
+        <TextView
+            android:text="Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rowValueTextView"
+            android:textSize="20px"
+            android:textColor="#ff808080" />
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/rowEditImageButton"
+        android:layout_column="1"
+        android:src="@drawable/GeneralEditIcon"
+        android:layout_width="96px"
+        android:layout_height="64px"
+        android:layout_marginTop="16px"
+        android:layout_marginBottom="16px"
+        android:layout_marginRight="16px"
+        android:background="#00ffffff"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitXY" />
+</TableRow>

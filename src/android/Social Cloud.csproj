@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A8B23841-3F20-482F-9DD0-60EE960B7EAC}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CCadmin</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AssemblyName>CCadmin</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.1</TargetFrameworkVersion>
+    <AndroidSupportedAbis>armeabi%3barmeabi-v7a%3bx86</AndroidSupportedAbis>
+    <MandroidI18n />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <DefineConstants>ANDROID</DefineConstants>
+    <AndroidStoreUncompressedFileExtensions />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAzure.MobileServices.Android">
+      <HintPath>..\..\libs\android\Microsoft.WindowsAzure.MobileServices.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\libs\android\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\common\CCAdminApi.cs">
+      <Link>common\CCAdminApi.cs</Link>
+    </Compile>
+    <Compile Include="..\common\EntityResultsArgs.cs">
+      <Link>common\EntityResultsArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\common\Exceptions\ServerErrorException.cs">
+      <Link>common\Exceptions\ServerErrorException.cs</Link>
+    </Compile>
+    <Compile Include="..\common\Exceptions\ServerNotFoundException.cs">
+      <Link>common\Exceptions\ServerNotFoundException.cs</Link>
+    </Compile>
+    <Compile Include="..\common\LoginManager.cs">
+      <Link>common\LoginManager.cs</Link>
+    </Compile>
+    <Compile Include="..\common\Model\BaseContent.cs">
+      <Link>common\Model\BaseContent.cs</Link>
+    </Compile>
+    <Compile Include="..\common\Model\enums.cs">
+      <Link>common\Model\enums.cs</Link>
+    </Compile>
+    <Compile Include="..\common\Model\Identities.cs">
+      <Link>common\Model\Identities.cs</Link>
+    </Compile>
+    <Compile Include="..\common\Model\Images.cs">
+      <Link>common\Model\Images.cs</Link>
+    </Compile>
+    <Compile Include="..\common\Model\PushChannel.cs">
+      <Link>common\Model\PushChannel.cs</Link>
+    </Compile>
+    <Compile Include="..\common\Model\Setting.cs">
+      <Link>common\Model\Setting.cs</Link>
+    </Compile>
+    <Compile Include="..\common\Model\Tweet.cs">
+      <Link>common\Model\Tweet.cs</Link>
+    </Compile>
+    <Compile Include="..\common\ResultArgs.cs">
+      <Link>common\ResultArgs.cs</Link>
+    </Compile>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LoginActivity.cs" />
+    <Compile Include="FlyOutContainer.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="UrlImageViewHelper\DownloaderAsyncTask.cs" />
+    <Compile Include="UrlImageViewHelper\ExtensionMethods.cs" />
+    <Compile Include="UrlImageViewHelper\Hashset.cs" />
+    <Compile Include="UrlImageViewHelper\LRUCache.cs" />
+    <Compile Include="UrlImageViewHelper\SoftReference.cs" />
+    <Compile Include="UrlImageViewHelper\SoftReferenceHashTable.cs" />
+    <Compile Include="UrlImageViewHelper\UrlImageCache.cs" />
+    <Compile Include="UrlImageViewHelper\UrlImageViewCallback.cs" />
+    <Compile Include="UrlImageViewHelper\UrlImageViewHelper.cs" />
+    <Compile Include="PushSharp\GCMConstants.cs" />
+    <Compile Include="PushSharp\PushClient.cs" />
+    <Compile Include="PushSharp\PushHandlerBroadcastReceiverBase.cs" />
+    <Compile Include="PushSharp\PushHandlerServiceBase.cs" />
+    <Compile Include="PushService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\layout\LoginLayout.axml" />
+    <AndroidResource Include="Resources\layout\DashboardLayout.axml" />
+    <AndroidResource Include="Resources\layout\MainLayout.axml" />
+    <AndroidResource Include="Resources\layout\ContentLayout.axml" />
+    <AndroidResource Include="Resources\drawable-nodpi\BlacklistPlusIcon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\DashboardAlertRulesIcon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\DashboardAlertsIcon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\DashboardBlacklistIcon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\DashboardDashboardIcon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\DashboardGeneralSettingsIcon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\DashboardImagesIcon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\DashboardTwitterIcon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\LoginCCIcon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\MainAlertIcon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\MainCCIcon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\MainDashboardDownIcon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\MainDashboardUpIcon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\MainSearchIcon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\MainUserIcon.png" />
+    <AndroidResource Include="Resources\drawable\TableRowEven.xml" />
+    <AndroidResource Include="Resources\drawable\TableRowGradient.xml" />
+    <AndroidResource Include="Resources\drawable\TableRowOdd.xml" />
+    <AndroidResource Include="Resources\drawable\TableRowFirst.xml" />
+    <AndroidResource Include="Resources\drawable-nodpi\TwitterConfigIcon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\LoginBackgroundImage.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\BlacklistDeleteIcon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\GeneralEditIcon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\MainHeaderBackground.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\HeaderDashboardIcon.png" />
+    <AndroidResource Include="Resources\layout\TweetsTableRow.axml" />
+    <AndroidResource Include="Resources\drawable-nodpi\TwitterPlusIcon.png" />
+    <AndroidResource Include="Resources\layout\BlacklistTableRow.axml" />
+    <AndroidResource Include="Resources\layout\LoadingLayout.axml" />
+    <AndroidResource Include="Resources\layout\AlertsTableRow.axml" />
+    <AndroidResource Include="Resources\layout\RulesTableRow.axml" />
+    <AndroidResource Include="Resources\layout\ImagesTableRow.axml" />
+    <AndroidResource Include="Resources\layout\GeneralTableRow.axml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="UrlImageViewHelper\" />
+    <Folder Include="PushSharp\" />
+  </ItemGroup>
+</Project>

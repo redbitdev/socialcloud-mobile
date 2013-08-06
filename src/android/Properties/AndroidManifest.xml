@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="ccAdmin.ccAdmin">
+	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="16" />
+	<application android:label="CCadmin" android:theme="@android:style/Theme.Black.NoTitleBar">
+	</application>
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<receiver
+        android:name="ccAdmin.ccAdmin.MyGCMBroadcastReceiver"
+        android:permission="com.google.android.c2dm.permission.SEND" >
+        <intent-filter>
+            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+            <category android:name="ccAdmin.ccAdmin.gcm2" />
+        </intent-filter>
+    </receiver>
+</manifest>

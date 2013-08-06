@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="420px"
+    android:layout_height="fill_parent"
+    android:id="@+id/dashboardContainerLinearLayout"
+    android:clickable="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/dashboardContentLinearLayout"
+        android:background="#fff0f0f0">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="76px">
+            <TextView
+                android:text="Settings"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="32px"
+                android:textSize="32px"
+                android:textColor="#ff5c5c5c" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+            <View
+                android:layout_width="22px"
+                android:layout_height="fill_parent"
+                android:background="#fffcb043" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ffd0d0d0" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="76px"
+            android:id="@+id/dashboardGeneralSettingsLinearLayout"
+            android:background="#fff0f0f0">
+            <ImageView
+                android:src="@drawable/DashboardGeneralSettingsIcon"
+                android:layout_width="42px"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="32px"
+                android:scaleType="centerInside" />
+            <TextView
+                android:text="General"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="16px"
+                android:gravity="center_vertical"
+                android:textSize="28px"
+                android:textColor="#ff5c5c5c" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ffd0d0d0" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="76px"
+            android:id="@+id/dashboardBlacklistLinearLayout"
+            android:clickable="true"
+            android:background="#fff0f0f0">
+            <ImageView
+                android:src="@drawable/DashboardBlacklistIcon"
+                android:layout_width="42px"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="32px"
+                android:scaleType="centerInside" />
+            <TextView
+                android:text="Blacklist"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="16px"
+                android:gravity="center_vertical"
+                android:textSize="28px"
+                android:textColor="#ff5c5c5c" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ffd0d0d0" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="76px">
+            <TextView
+                android:text="Social Messages"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="32px"
+                android:textSize="32px"
+                android:textColor="#ff5c5c5c" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+            <View
+                android:layout_width="22px"
+                android:layout_height="fill_parent"
+                android:background="#ff5cc7f2" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ffd0d0d0" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="76px"
+            android:id="@+id/dashboardTwitterLinearLayout"
+            android:background="#ffd0d0d0">
+            <ImageView
+                android:src="@drawable/DashboardTwitterIcon"
+                android:layout_width="42px"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="32px"
+                android:scaleType="centerInside" />
+            <TextView
+                android:text="Tweets"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="16px"
+                android:gravity="center_vertical"
+                android:textSize="28px"
+                android:textColor="#ff5c5c5c" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ffd0d0d0" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="76px"
+            android:id="@+id/dashboardImagesLinearLayout"
+            android:background="#fff0f0f0">
+            <ImageView
+                android:src="@drawable/DashboardImagesIcon"
+                android:layout_width="42px"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="32px"
+                android:scaleType="centerInside" />
+            <TextView
+                android:text="Images"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="16px"
+                android:gravity="center_vertical"
+                android:textSize="28px"
+                android:textColor="#ff5c5c5c" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ffd0d0d0" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="76px">
+            <TextView
+                android:text="Alerts"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="32px"
+                android:textSize="32px"
+                android:textColor="#ff5c5c5c" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+            <View
+                android:layout_width="22px"
+                android:layout_height="fill_parent"
+                android:background="#ffae1e56" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ffd0d0d0" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="76px"
+            android:id="@+id/dashboardAlertsLinearLayout"
+            android:background="#fff0f0f0">
+            <ImageView
+                android:src="@drawable/DashboardAlertsIcon"
+                android:layout_width="42px"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="32px"
+                android:scaleType="centerInside" />
+            <TextView
+                android:text="Your Alerts"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="16px"
+                android:gravity="center_vertical"
+                android:textSize="28px"
+                android:textColor="#ff5c5c5c" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ffd0d0d0" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="76px"
+            android:id="@+id/dashboardAlertRulesLinearLayout"
+            android:background="#fff0f0f0">
+            <ImageView
+                android:src="@drawable/DashboardAlertRulesIcon"
+                android:layout_width="42px"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="32px"
+                android:scaleType="centerInside" />
+            <TextView
+                android:text="Your Alert Rules"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="16px"
+                android:gravity="center_vertical"
+                android:textSize="28px"
+                android:textColor="#ff5c5c5c" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ffd0d0d0" />
+    </LinearLayout>
+    <View
+        android:layout_width="1px"
+        android:layout_height="fill_parent"
+        android:background="#ffd0d0d0" />
+</LinearLayout>

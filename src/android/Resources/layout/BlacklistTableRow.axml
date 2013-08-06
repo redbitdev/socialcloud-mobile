@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+    <TextView
+        android:id="@+id/rowWordTextView"
+        android:layout_column="0"
+        android:text="Blacklisted Word"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textSize="24px"
+        android:textColor="#ff202020"
+        android:layout_marginLeft="16px"
+        android:layout_marginTop="16px"
+        android:layout_marginBottom="16px"
+        android:layout_marginRight="16px" />
+    <ImageButton
+        android:id="@+id/rowDeleteImageButton"
+        android:layout_column="1"
+        android:src="@drawable/BlacklistDeleteIcon"
+        android:layout_width="96px"
+        android:layout_height="64px"
+        android:layout_marginTop="16px"
+        android:layout_marginBottom="16px"
+        android:layout_marginRight="16px"
+        android:background="#00ffffff"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitXY" />
+</TableRow>

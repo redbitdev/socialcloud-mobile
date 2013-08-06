@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+    <LinearLayout
+        android:layout_column="0"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16px"
+        android:layout_marginLeft="16px"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16px"
+        android:layout_marginBottom="16px"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:text="Rule Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rowRuleTextView"
+            android:textSize="24px"
+            android:layout_marginBottom="8px"
+            android:textColor="#ff202020" />
+        <TextView
+            android:text="Term Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rowTermTextView"
+            android:textSize="20px"
+            android:layout_marginBottom="8px"
+            android:textColor="#ff808080" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8px">
+            <TextView
+                android:text="Send Mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rowMobileTextView"
+                android:textSize="20px"
+                android:textColor="#ff808080" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:text="Send Dash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rowDashTextView"
+                android:textSize="20px"
+                android:textColor="#ff808080" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Send Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rowEmailTextView"
+                android:textSize="20px"
+                android:textColor="#ff808080" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:text="Send Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rowTextTextView"
+                android:textSize="20px"
+                android:textColor="#ff808080" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/rowDeleteImageButton"
+        android:layout_column="1"
+        android:src="@drawable/BlacklistDeleteIcon"
+        android:layout_width="96px"
+        android:layout_height="64px"
+        android:layout_marginTop="16px"
+        android:layout_marginBottom="16px"
+        android:layout_marginRight="16px"
+        android:background="#00ffffff"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitXY" />
+</TableRow>
