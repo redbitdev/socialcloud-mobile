@@ -114,6 +114,7 @@ namespace RedBit.CCAdmin
 			var edit = Preferences.Edit();
 			edit.Remove(TOKEN_USER_ID);
 			edit.Remove(TOKEN_USER_TOKEN);
+			edit.Commit();
 #endif
 			RemoteIdentity = null;
 			AuthenticationToken = null;
